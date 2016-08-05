@@ -1,2 +1,57 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero-heading">
+				<h1>What do you need done?</h1>
+				<p>Browse. Buy. Done</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+				<form>
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="What are you looking for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">
+								Find Services
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container section">
+	<h1>Newest Gigs</h1>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="gig-card">
+				<%= image_tag 'data.png' %>
+				<h4>I will run a full data analysis of your site</h4>
+				<h3>$6</h3>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="gig-card">
+				<%= image_tag 'voiceover.jpg' %>
+				<h4>I will provide a voiceover for 1000 words</h4>
+				<h3>$6</h3>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="gig-card">
+				<%= image_tag 'coding.jpg' %>
+				<h4>I will code all the things for you</h4>
+				<h3>$6</h3>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="gig-card">
+				<%= image_tag 'drums.jpg' %>
+				<h4>I will play the drums for you</h4>
+				<h3>$6</h3>
+			</div>
+		</div>
+	</div>
+</div>

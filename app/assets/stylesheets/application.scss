@@ -1,2 +1,99 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+	background-color: #f7f7f7;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.btn-primary {
+	font-size: 14px;
+	font-weight: 700;
+	padding: 15px 35px;
+	margin: 0;
+}
+
+label {
+	font-size: 17px;
+	font-weight: 500;
+	color: dark-gray;
+	text-transform: uppercase;
+}
+
+select {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 10px;
+	width: 100px;
+}
+
+.select-control {
+	font-size: 16px;
+	position: relative;
+	display: block;
+}
+
+.hero {
+	background: image-url('header-bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+}
+
+.hero-heading h1 {
+	color: #000;
+	margin-top: 100px;
+	font-size: 37px;
+	font-weight: 600;
+}
+
+.hero-heading p {
+	font-weight: 400;
+	color: #fff;
+	font-size: 24px;
+}
+.section h1 {
+	text-align: center;
+	margin: 40px;
+}
+
+.gig-card {
+	background-color: #fff;
+	width: 228px;
+	height: 295px;
+	border: 1px #e5e5e5 solid;
+	margin: 0 auto 20px auto;
+	padding: 0;
+}
+.gig-card img {
+	width: 228px;
+	height: 180px;
+}
+
+.gig-card h4 {
+	padding: 10px;
+	font-weight: 400;
+}
+.gig-card h3 {
+	color: #00b22d;
+	padding: 0px 10px;
+	font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
