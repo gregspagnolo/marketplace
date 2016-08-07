@@ -67,9 +67,10 @@ select {
 .gig-card {
 	background-color: #fff;
 	width: 228px;
-	height: 295px;
+	height: 298px;
 	border: 1px #e5e5e5 solid;
 	margin: 0 auto 20px auto;
+	border-radius: 10px;
 	padding: 0;
 }
 .gig-card img {
@@ -93,6 +94,10 @@ select {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10px 30px;
+}
+
+.panel-default .panel-heading {
+	background-color: white;
 }
 
 
