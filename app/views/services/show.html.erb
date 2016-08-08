@@ -18,5 +18,20 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="col-md-4">
+		<%= render 'orders/form' %>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<center>
+					<h3><%= @service.user.full_name %></h3>
+				</center>
+			</div>
+			<div class="panel-body">
+				<%= @service.user.description %>
+			</div>
+		</div>
+	</div>
 </div>
 	

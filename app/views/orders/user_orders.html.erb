@@ -1,0 +1,49 @@
+<br><br>
+<div class="row">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<center>
+				<h3><%= current_user.full_name %></h3>
+				</center>
+			</div>
+			<div class="panel-body">
+				<%= current_user.description %>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>My Orders</h3>
+			</div>
+			<div class="panel-body">
+				<% @orders.each do |order| %>
+					<div class="row">
+						<div class="col-md-2">
+							<%= link_to service_path(order.service) do %>
+								<%= image_tag order.service.image.url(:thumb) %>
+							<% end %>
+						</div>
+						<div class="col-md-3">
+							<%= link_to service_path(order.service) do %>
+								<h4><%= order.service.title %></h4>
+							<% end %>
+						</div>
+						<div class="col-md-2">
+							<p><h5>Quantity: <%= order.quantity %></h5></p>
+							<p><h5>Price: <%= number_to_currency(order.price) %></h5></p>
+						</div>
+						<div class="col-md-2">
+							<p><h5>Ordered on:</h5></p>
+							<p><h5><%= order.created_at.strftime('%b %d, %Y') %></h5></p>
+						</div>
+						<div class="col-md-3">
+							<h5>Total Price: <%= number_to_currency(order.total_price) %></h5>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

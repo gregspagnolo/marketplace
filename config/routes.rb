@@ -9,5 +9,15 @@ Rails.application.routes.draw do
   			 :registrations => 'registrations'}
 
   resources :users, only: [:show]
+
   resources :services
+  	resources :services do
+  		resources :orders, only: [:create]
+  	end
+
+  resources :orders, only: [:show]
+
+  get '/user_orders' => 'orders#user_orders'
+  get '/user_sales' => 'orders#user_sales'
+
 end
