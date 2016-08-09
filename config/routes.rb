@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   	end
 
   resources :orders, only: [:show]
+  resources :charges
 
   get '/user_orders' => 'orders#user_orders'
   get '/user_sales' => 'orders#user_sales'
