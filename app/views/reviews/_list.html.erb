@@ -1,0 +1,22 @@
+<% if @reviews.count == 0 %>
+	<div>
+		<center>
+			<h4>There are no reviews yet.</h4>
+		</center>
+	</div>
+<% else %>
+	<% @reviews.each do |review| %>
+		<div class="panel-body">
+			<div class="col-md-7">
+				<p><strong><%= review.user.full_name %> says: </strong></p>
+				<p><%= review.comment %></p>
+			</div>
+			<div class="col-md-3 pull-right">
+				<%= review.created_at.strftime('%b %d, %Y') %> <br />
+				<%= link_to "Remove my review", [@service, review], method: :delete, data: {confirm: "Are you sure?"} if current_user && current_user == review.user %>
+			</div>
+		</div>
+
+
+<% end %>
+<% end %>
