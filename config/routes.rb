@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   		resources :orders, only: [:create]
   	end
 
+  resources :services do
+    resources :reviews, only: [:create, :destroy]
+  end
+
   resources :orders, only: [:show]
   resources :charges
 

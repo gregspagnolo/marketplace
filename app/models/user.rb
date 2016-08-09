@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
 
   has_many :services
   has_many :orders
+  has_many :reviews
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
