@@ -9,6 +9,7 @@
 		<div class="panel-body">
 			<div class="col-md-7">
 				<p><strong><%= review.user.full_name %> says: </strong></p>
+				<p><span id="stars_<%= review.id %>"></span></p>
 				<p><%= review.comment %></p>
 			</div>
 			<div class="col-md-3 pull-right">
@@ -16,7 +17,12 @@
 				<%= link_to "Remove my review", [@service, review], method: :delete, data: {confirm: "Are you sure?"} if current_user && current_user == review.user %>
 			</div>
 		</div>
-
-
-<% end %>
+		<script>
+			$('#stars_<%= review.id %>').raty({
+				path: '/assets',
+				readOnly: true,
+				score: <%= review.star %>
+			});
+		</script>
+	<% end %>
 <% end %>

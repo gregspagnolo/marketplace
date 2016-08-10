@@ -14,4 +14,8 @@ class Service < ActiveRecord::Base
 	validates :requirements, presence: true, length: {maximum:400}
 	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
+	def average_rating
+		reviews.count == 0 ? 0 : reviews.average(:star).round(2)
+	end
+
 end
