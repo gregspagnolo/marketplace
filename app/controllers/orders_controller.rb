@@ -8,6 +8,5 @@ class OrdersController < ApplicationController
   def user_sales
   	@services = current_user.services
   end
-
-
+  
 end

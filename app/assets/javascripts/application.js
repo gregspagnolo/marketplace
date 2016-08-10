@@ -17,3 +17,9 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery.raty
+
+$(function() {
+   $('.alert').delay(500).fadeIn('normal', function() {
+      $(this).delay(2000).fadeOut();
+   });
+});
