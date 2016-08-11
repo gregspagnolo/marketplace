@@ -24,34 +24,16 @@
 </div>
 <div class="container section">
 	<h1>Newest Gigs</h1>
-	<div class="row">
-		<div class="col-md-3">
-			<div class="gig-card">
-				<%= image_tag 'data.png' %>
-				<h4>I will run a full data analysis of your site</h4>
-				<h3>$6</h3>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="gig-card">
-				<%= image_tag 'voiceover.jpg' %>
-				<h4>I will provide a voiceover for 1000 words</h4>
-				<h3>$6</h3>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="gig-card">
-				<%= image_tag 'coding.jpg' %>
-				<h4>I will code all the things for you</h4>
-				<h3>$6</h3>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="gig-card">
-				<%= image_tag 'drums.jpg' %>
-				<h4>I will play the drums for you</h4>
-				<h3>$6</h3>
-			</div>
-		</div>
-	</div>
+		<div class="row">
+			<% @services.each do |service| %>
+				<div class="col-md-3">
+					<%= link_to(service) do %>
+					<div class="gig-card">
+						<center><%= image_tag service.image.url(:small) %></center>
+						<h4><%= service.title %></h4>
+						<h3><%= number_to_currency(service.price) %></h3>
+					</div>
+					<% end %>
+				</div>
+			<% end %>
 </div>

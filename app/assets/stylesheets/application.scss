@@ -5,6 +5,11 @@ body {
 	background-color: #f7f7f7;
 }
 
+a, a:hover {
+	text-decoration: none;
+	color: #333;
+}
+
 .container {
 	position: relative;
 }
