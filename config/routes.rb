@@ -25,4 +25,6 @@ Rails.application.routes.draw do
   get '/user_orders' => 'orders#user_orders'
   get '/user_sales' => 'orders#user_sales'
 
+  get '/search', to: 'search#search'
+
 end
