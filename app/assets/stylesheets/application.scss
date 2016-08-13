@@ -10,8 +10,16 @@ a, a:hover {
 	color: #333;
 }
 
+h3 {
+	margin: 0;
+}
+
 .container {
 	position: relative;
+}
+
+.top-down {
+	margin-top: 30px;
 }
 
 .alert {
@@ -150,9 +158,15 @@ select {
 	padding: 10px 30px;
 }
 
+.panel-body #btn-order {
+	background-color: green;
+	margin: 0 auto;
+}
+
 .btn-facebook, .btn-facebook:hover {
 	background: #3b5998;
 	border-color: #3b5998;
+	color: green;
 }
 
 .panel-default .panel-heading {
