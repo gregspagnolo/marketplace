@@ -64,4 +64,5 @@ group :production do
 	#Use PG for production
 	gem 'pg'
 	gem 'rmagick'
+	gem 'rails_12factor'
 end
