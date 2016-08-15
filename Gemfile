@@ -32,7 +32,7 @@ gem 'omniauth-facebook', '3.0.0'
 
 # Use paperclip gem for photo uploads
 gem 'paperclip'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk'
 
 # Use Stripe for payment processing
 gem 'stripe'
