@@ -86,7 +86,7 @@ label {
 }
 
 select {
-	background-color: #fff;
+	background-color: #ffc;
 	border: 1px solid #ccc;
 	border-radius: 2px;
 	padding: 10px;
@@ -100,7 +100,7 @@ select {
 }
 
 .hero {
-	background: image-url('header-bg.jpg') no-repeat center center fixed;
+	background: image-url('header-bg3.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -110,7 +110,7 @@ select {
 }
 
 .hero-heading h1 {
-	color: #000;
+	color: #ffc;
 	margin-top: 100px;
 	font-size: 37px;
 	font-weight: 600;
@@ -160,13 +160,14 @@ select {
 
 .panel-body #btn-order {
 	background-color: green;
-	margin: 0 auto;
+	font-weight: 500;
+	margin-left: 45px;
 }
 
 .btn-facebook, .btn-facebook:hover {
 	background: #3b5998;
 	border-color: #3b5998;
-	color: green;
+	color: white;
 }
 
 .panel-default .panel-heading {
